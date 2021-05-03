@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>注册案例</title>
+		<style>
+			html{
+				height: 100%;
+			}
+			body{
+				height: 100%;
+				margin:0px;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				background-image: url(img/timg.jpg);
+				background-size: cover;
+			}
+			
+			#container{
+				
+				background-color:#ffffff ;
+				height: 500px;
+				width: 1400px;
+				display: flex;	
+				padding-top: 80px;
+				
+			}
+			
+			#center{
+				 margin‐top:30px;      
+				 width:60%;
+				 color:gray;
+				 display:flex;
+				 flex‐direction: column;
+				 align-items:center;
+			}
+			#center input{
+				width: 300px;
+				height: 30px;
+				border: 1px solid gainsboro;
+				border-radius:5px ;
+				margin: 5px;
+			}
+			#center #verifies{
+				display: flex;
+				align-items: center;
+
+			}
+			
+			#center #verify{
+				width: 180px;
+			}
+			#center #img{
+				width: 110px;
+				height: 35px;
+			}
+			#center #btn{
+				background-color: yellowgreen;
+				width: 150px;
+				height: 35px;
+				border: none;
+			}
+			
+			#left {
+				width: 25%;
+				margin: 30px;
+				font-size: 30px;
+				color: gray;
+				font-weight: bolder;
+			}
+			
+			#left #f1{
+				color: orange;
+			}
+			
+			#right{
+				width: 15%;
+			}
+			#right a{
+				color: indianred;
+				text-decoration: none;
+			}
+			#right a:hover{
+				color: red;
+			}
+			
+		</style>
+		
+	</head>
+	<body>
+		
+		<div id="container">
+			<div id="left">
+				<font id="f1" > 新用户注册</font></br>
+				<font id="f2"> USER REGISTER</font>
+			</div>
+			<div id="center">
+				<table>
+				<tr>
+					<td>账户</td>
+					<td><input type="text" name="username" placeholder="请输入账户" /></td>
+				</tr>
+				<tr>
+					<td>密码</td>
+					<td><input type="password" name="password" placeholder="请输入密码" /></td>
+				</tr>
+				<tr>
+					<td>邮箱</td>
+					<td><input type="email" name="email" placeholder="请输入邮箱" /></td>
+				</tr>
+				<tr>
+					<td>姓名</td>
+					<td><input type="text" name="realname" placeholder="请输入姓名" /></td>
+				</tr>
+				<tr>
+					<td>手机号</td>
+					<td><input type="phonenumber" name="phonenumber" placeholder="请输入手机号" /></td>
+				</tr>
+				<tr>
+					<td>性别</td>
+					<td><input type="text" name="sex" placeholder="请输入性别" /></td>
+				</tr>
+				<!--<tr>
+					<td>出生日期</td>
+					<td><input type="text" name="birthday" placeholder="yyyy年MM月ddri" /></td>
+				</tr>-->
+				<tr>
+					<td>验证码</td>
+					<td id="verifies">
+					<input type="text" name="validatecode" id="verify" placeholder="请输入验证码" />
+					<img id="img" src="img/a.gif"/>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2">
+						<input id="btn" type="submit" value="注册" /></td>
+				</tr>
+				</table>
+			</div>
+			<div id="right">
+				<font>已有账户?</font>
+				<a href="index.html">立即登录</a>
+			</div>
+		</div>
+	</body>
+</html>
